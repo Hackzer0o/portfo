@@ -3,8 +3,8 @@ import os
 from flask_recaptcha import ReCaptcha
 
 app = Flask(__name__)
-app.config['RECAPTCHA_SITE_KEY'] = '6LdAiwIkAAAAAMrkf-XbI0FwzSt3zUJpuO6oG7Mu'
-app.config['RECAPTCHA_SECRET_KEY'] = '6LdAiwIkAAAAAHIoGE0tyridyzvNPfUTXl0VV0k1'
+app.config['RECAPTCHA_SITE_KEY'] = 'SITE_KEY'
+app.config['RECAPTCHA_SECRET_KEY'] = 'SECRET_KEY'
 recaptcha = ReCaptcha(app)
 
 @app.route('/', methods=['GET', 'POST'])
